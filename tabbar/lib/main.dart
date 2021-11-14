@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         brightness: Brightness.dark,
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const MyHomePage(),
@@ -61,28 +61,6 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
-// class MyImageGenerator extends StatelessWidget {
-//   const MyImageGenerator({Key? key, this.url = ""}) : super(key: key);
-
-//   final String url;
-//   @override
-//   Widget build(BuildContext context) {
-//     int randomWidth = randomNumber(max: 250, min: 200);
-//     int randomHeight = randomNumber(max: 200, min: 300);
-
-//     return Center(
-//         child: Container(
-//       margin: const EdgeInsets.all(20),
-//       decoration: BoxDecoration(
-//         border: Border.all(width: 8, color: Colors.white),
-//         color: Colors.black,
-//       ),
-//       child: Image.network(
-//           url + randomHeight.toString() + "/" + randomWidth.toString()),
-//     ));
-//   }
-// }
-
 class UrlRandomImageGenerator extends StatefulWidget {
   const UrlRandomImageGenerator({Key? key, this.url = ""}) : super(key: key);
 
@@ -123,9 +101,7 @@ class _UrlRandomImageGenerator extends State<UrlRandomImageGenerator> {
   }
 }
 
-/***
- * Helpers
- */
+/// Helpers
 int randomNumber({int max = 400, int min = 0}) {
   Random random = Random();
   return min + random.nextInt(max);
