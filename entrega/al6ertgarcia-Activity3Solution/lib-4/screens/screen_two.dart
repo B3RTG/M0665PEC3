@@ -10,7 +10,7 @@ class ScreenTwo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Screen(
       background: Colors.blue[200],
-      index: 2,
+      index: 1,
       ids: const ["screen_five"],
     );
   }

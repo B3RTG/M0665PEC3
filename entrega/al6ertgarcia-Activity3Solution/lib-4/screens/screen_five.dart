@@ -10,7 +10,7 @@ class ScreenFive extends StatelessWidget {
   Widget build(BuildContext context) {
     return Screen(
       background: Colors.deepOrange[200],
-      index: 5,
+      index: 4,
       ids: const ["screen_one", "screen_two", "screen_four"],
       showCloseAllButton: true,
     );
